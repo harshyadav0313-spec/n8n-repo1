@@ -1,0 +1,16 @@
+FROM n8nio/n8n:latest
+ENV N8N_PORT=8080
+ENV N8N_ENCRYPTION_KEY=harsh123machine
+ENV WEBHOOK_URL=https://n8n-repo1.antideploy.com
+ENV TZ=Asia/Kolkata
+ENV GENERIC_TIMEZONE=Asia/Kolkata
+ENV DB_TYPE=postgresdb
+ENV DB_POSTGRESDB_HOST=aws-0-ap-northeast-1.pooler.supabase.com
+ENV DB_POSTGRESDB_PORT=6543
+ENV DB_POSTGRESDB_DATABASE=postgres
+ENV DB_POSTGRESDB_USER=postgres.tdibomlufxsndzuqwjus
+ENV DB_POSTGRESDB_PASSWORD=harshyadav2532
+ENV DB_POSTGRESDB_SSL_ENABLED=true
+ENV DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED=false
+EXPOSE 8080
+CMD ["n8n", "start"]
